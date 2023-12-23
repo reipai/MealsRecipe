@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.meal.MealActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="Name Food"
+        app:titleTextColor="@color/black"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivMeals"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_200sdp"
+                android:layout_margin="@dimen/_12sdp"
+                android:layout_centerHorizontal="true"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvYoutube"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_30sdp"
+                app:cardBackgroundColor="@android:color/holo_red_light"
+                app:cardCornerRadius="@dimen/_8sdp"
+                app:cardUseCompatPadding="true"
+                android:layout_below="@id/ivMeals">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/_8sdp"
+                    android:gravity="center_vertical"
+                    android:text="Watch on Youtube"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_10ssp"
+                    app:drawableStartCompat="@drawable/ic_play" />
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:id="@+id/ivFavorite"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                app:srcCompat="@drawable/ic_not_favorite"
+                android:layout_below="@id/ivMeals"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/_10sdp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_detail_meals"
+                android:layout_below="@id/cvYoutube"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:padding="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ingredients:"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_14ssp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvIngredients1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="@dimen/_8sdp"
+                            android:paddingEnd="@dimen/_8sdp"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/_12ssp"/>
+
+                        <TextView
+                            android:id="@+id/tvIngredients2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="@dimen/_8sdp"
+                            android:paddingEnd="@dimen/_8sdp"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/_12ssp"/>
+
+                        <TextView
+                            android:id="@+id/tvIngredients3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="@dimen/_8sdp"
+                            android:paddingEnd="@dimen/_8sdp"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/_12ssp"/>
+
+                        <TextView
+                            android:id="@+id/tvIngredients4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="@dimen/_8sdp"
+                            android:paddingEnd="@dimen/_8sdp"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/_12ssp"/>
+
+                        <TextView
+                            android:id="@+id/tvIngredients5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="@dimen/_8sdp"
+                            android:paddingEnd="@dimen/_8sdp"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/_12ssp"/>
+
+                        <TextView
+                            android:id="@+id/tvIngredients6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="@dimen/_8sdp"
+                            android:paddingEnd="@dimen/_8sdp"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/_12ssp"/>
+
+                        <TextView
+                            android:id="@+id/tvIngredients7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="@dimen/_8sdp"
+                            android:paddingEnd="@dimen/_8sdp"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/_12ssp"/>
+
+                        <TextView
+                            android:id="@+id/tvIngredients8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="@dimen/_8sdp"
+                            android:paddingEnd="@dimen/_8sdp"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/_12ssp"/>
+
+                        <TextView
+                            android:id="@+id/tvIngredients9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="@dimen/_8sdp"
+                            android:paddingEnd="@dimen/_8sdp"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/_12ssp"/>
+
+                        <TextView
+                            android:id="@+id/tvIngredients10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="@dimen/_8sdp"
+                            android:paddingEnd="@dimen/_8sdp"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/_12ssp"/>
+
+                        <TextView
+                            android:id="@+id/tvIngredients11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="@dimen/_8sdp"
+                            android:paddingEnd="@dimen/_8sdp"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/_12ssp"/>
+
+                        <TextView
+                            android:id="@+id/tvIngredients12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="@dimen/_8sdp"
+                            android:paddingEnd="@dimen/_8sdp"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/_12ssp"/>
+
+                        <TextView
+                            android:id="@+id/tvIngredients13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="@dimen/_8sdp"
+                            android:paddingEnd="@dimen/_8sdp"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/_12ssp"/>
+
+                        <TextView
+                            android:id="@+id/tvIngredients14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="@dimen/_8sdp"
+                            android:paddingEnd="@dimen/_8sdp"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/_12ssp"/>
+
+                        <TextView
+                            android:id="@+id/tvIngredients15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="@dimen/_8sdp"
+                            android:paddingEnd="@dimen/_8sdp"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/_12ssp"/>
+
+                        <TextView
+                            android:id="@+id/tvIngredients16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="@dimen/_8sdp"
+                            android:paddingEnd="@dimen/_8sdp"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/_12ssp"/>
+
+                        <TextView
+                            android:id="@+id/tvIngredients17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="@dimen/_8sdp"
+                            android:paddingEnd="@dimen/_8sdp"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/_12ssp"/>
+
+                        <TextView
+                            android:id="@+id/tvIngredients18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="@dimen/_8sdp"
+                            android:paddingEnd="@dimen/_8sdp"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/_12ssp"/>
+
+                        <TextView
+                            android:id="@+id/tvIngredients19"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="@dimen/_8sdp"
+                            android:paddingEnd="@dimen/_8sdp"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/_12ssp"/>
+
+                        <TextView
+                            android:id="@+id/tvIngredients20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="@dimen/_8sdp"
+                            android:paddingEnd="@dimen/_8sdp"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/_12ssp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvMeasure1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="@dimen/_8sdp"
+                            android:paddingEnd="@dimen/_8sdp"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/_12ssp"/>
+
+                        <TextView
+                            android:id="@+id/tvMeasure2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="@dimen/_8sdp"
+                            android:paddingEnd="@dimen/_8sdp"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/_12ssp"/>
+
+                        <TextView
+                            android:id="@+id/tvMeasure3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="@dimen/_8sdp"
+                            android:paddingEnd="@dimen/_8sdp"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/_12ssp"/>
+
+                        <TextView
+                            android:id="@+id/tvMeasure4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="@dimen/_8sdp"
+                            android:paddingEnd="@dimen/_8sdp"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/_12ssp"/>
+
+                        <TextView
+                            android:id="@+id/tvMeasure5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="@dimen/_8sdp"
+                            android:paddingEnd="@dimen/_8sdp"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/_12ssp"/>
+
+                        <TextView
+                            android:id="@+id/tvMeasure6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="@dimen/_8sdp"
+                            android:paddingEnd="@dimen/_8sdp"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/_12ssp"/>
+
+                        <TextView
+                            android:id="@+id/tvMeasure7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="@dimen/_8sdp"
+                            android:paddingEnd="@dimen/_8sdp"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/_12ssp"/>
+
+                        <TextView
+                            android:id="@+id/tvMeasure8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="@dimen/_8sdp"
+                            android:paddingEnd="@dimen/_8sdp"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/_12ssp"/>
+
+                        <TextView
+                            android:id="@+id/tvMeasure9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="@dimen/_8sdp"
+                            android:paddingEnd="@dimen/_8sdp"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/_12ssp"/>
+
+                        <TextView
+                            android:id="@+id/tvMeasure10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="@dimen/_8sdp"
+                            android:paddingEnd="@dimen/_8sdp"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/_12ssp"/>
+
+                        <TextView
+                            android:id="@+id/tvMeasure11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="@dimen/_8sdp"
+                            android:paddingEnd="@dimen/_8sdp"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/_12ssp"/>
+
+                        <TextView
+                            android:id="@+id/tvMeasure12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="@dimen/_8sdp"
+                            android:paddingEnd="@dimen/_8sdp"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/_12ssp"/>
+
+                        <TextView
+                            android:id="@+id/tvMeasure13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="@dimen/_8sdp"
+                            android:paddingEnd="@dimen/_8sdp"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/_12ssp"/>
+
+                        <TextView
+                            android:id="@+id/tvMeasure14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="@dimen/_8sdp"
+                            android:paddingEnd="@dimen/_8sdp"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/_12ssp"/>
+
+                        <TextView
+                            android:id="@+id/tvMeasure15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="@dimen/_8sdp"
+                            android:paddingEnd="@dimen/_8sdp"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/_12ssp"/>
+
+                        <TextView
+                            android:id="@+id/tvMeasure16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="@dimen/_8sdp"
+                            android:paddingEnd="@dimen/_8sdp"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/_12ssp"/>
+
+                        <TextView
+                            android:id="@+id/tvMeasure17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="@dimen/_8sdp"
+                            android:paddingEnd="@dimen/_8sdp"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/_12ssp"/>
+
+                        <TextView
+                            android:id="@+id/tvMeasure18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="@dimen/_8sdp"
+                            android:paddingEnd="@dimen/_8sdp"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/_12ssp"/>
+
+                        <TextView
+                            android:id="@+id/tvMeasure19"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="@dimen/_8sdp"
+                            android:paddingEnd="@dimen/_8sdp"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/_12ssp"/>
+
+                        <TextView
+                            android:id="@+id/tvMeasure20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="@dimen/_8sdp"
+                            android:paddingEnd="@dimen/_8sdp"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/_12ssp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Instructions:"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_14ssp"/>
+
+                <TextView
+                    android:id="@+id/tvInstruction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_12ssp"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:paddingEnd="@dimen/_8sdp"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+</LinearLayout>

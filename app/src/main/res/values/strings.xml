@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Meal Recipes</string>
+    <string name="greatings">Hello, Meal Lovers!</string>
+    <string name="food_list">Food List</string>
+</resources>
