@@ -16,9 +16,8 @@ Java-based Android recipe application helps users to find out food recipes.
 ### Screenshots :
 <table align="center">
  <tr>
-  <td><img src="https://github.com/reipai/" alt="Splash Screen" style="width:200px;height:400px;"></td>
-  <td><img src="https://github.com/reipai/" alt="Home Page" style="width:200px;height:400px;"></td>
-  <td><img src="https://github.com/reipai/" alt="Detail News" style="width:200px;height:400px;"></td>
-  <td><img src="https://github.com/reipai/" alt="About Me" style="width:200px;height:400px;"></td>
+  <td><img src="https://github.com/reipai/screenshoot/home.png" alt="Home Page" style="width:200px;height:400px;"></td>
+  <td><img src="https://github.com/reipai/screenshoot/food list category.png" alt="Food List Category" style="width:200px;height:400px;"></td>
+  <td><img src="https://github.com/reipai/screenshoot/ detail food.png" alt="Detail Food" style="width:200px;height:400px;"></td>
  </tr>
 </table>
